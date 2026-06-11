@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Exercícios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0d2b3e, #123f59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            text-decoration: none;
+            color: #0d2b3e;
+            transition: .3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,.15);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.25);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #00bfa6;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Portfólio de Exercícios</h1>
+            <p>Desenvolvimento Web • JavaScript • Manipulação de DOM</p>
+        </div>
+
+        <div class="cards">
+
+            <a href="validadorDeCpf.html" class="card">
+                <h2>Validador de CPF</h2>
+                <p>
+                    Sistema para validação de CPF utilizando regras matemáticas
+                    dos dígitos verificadores.
+                </p>
+            </a>
+
+            <a href="mediaEscolar.html" class="card">
+                <h2>Média Escolar</h2>
+                <p>
+                    Cálculo de médias escolares com exibição automática do
+                    resultado final do aluno.
+                </p>
+            </a>
+
+            <a href="conversorDinâmico.html" class="card">
+                <h2>Conversor Dinâmico</h2>
+                <p>
+                    Conversão de valores em tempo real utilizando JavaScript
+                    e interação com o usuário.
+                </p>
+            </a>
+
+            <a href="gestaoDeCorvidados.html" class="card">
+                <h2>Gestão de Convidados</h2>
+                <p>
+                    Controle de convidados com manipulação de arrays e DOM
+                    sem recarregar a página.
+                </p>
+            </a>
+
+            <a href="infinityBank.html" class="card">
+                <h2>Infinity Bank</h2>
+                <p>
+                    Sistema bancário desenvolvido para demonstrar operações,
+                    validações e gerenciamento de dados.
+                </p>
+            </a>
+
+        </div>
+
+        <footer>
+            © 2026 • Thiago Lopes
+        </footer>
+
+    </div>
+
+</body>
+</html>
